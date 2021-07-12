@@ -3,9 +3,7 @@
 
 Overview of the project
 
-- The index page of IsshoTabe (homepage) is home.html. Meanwhile, the landing page that explains the  (ideal) functions of the website is landing-page.html
-
-To return to this homepage, you can click on the Manabu logo on the header on most other pages. 
+- The index page of IsshoTabe (homepage) is home.html. Meanwhile, the landing page that explains the  (ideal) functions and features of the website is landing-page.html
 
 - On the website, there are:
    + 1 homepage
@@ -13,8 +11,10 @@ To return to this homepage, you can click on the Manabu logo on the header on mo
    + 2 pages of a login page and a register page
    + 1 page for a texting chat feed 
    + 1 page listing the video chatrooms of the user
-   + 1 subpage of the video chatroom
-   + 1 page of prototyping the video call/meeting
+   + 1 subpage of the video chatroom 
+	(please click on "Camping Club" in home.html or video-chat.html to access this page)
+   + 1 page of prototyping the video call/meeting 
+	(please click on "Start a meeting" from the "Camping Club" chatroom to go to this page)
 
 - Due to my lack of coding skills, I apologize that apart from buttons that transition between pages, most of the functions on the website do not work properly as they should (for example, logging in, creating an account, texting (in the chat feed),  or starting a video call). The website consists of visual design components and the presentations of functions only, and no back-end functions were programmed.
 

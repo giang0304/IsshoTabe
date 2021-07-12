@@ -370,11 +370,11 @@ body {
 }
 
 .users .person .user .status.online {
-    background: #17e9e0;
+    background: #9a77cf;
 }
 
 .users .person .user .status.offline {
-    background: #f1f1f1;
+    background: #EAE3F5;
 }
 
 .users .person .user .status.away {
@@ -382,7 +382,7 @@ body {
 }
 
 .users .person .user .status.busy {
-    background: #ec4176;
+    background: #dd4b39;
 }
 
 .users .person p.name-time {
