@@ -7,7 +7,7 @@ Overview of the project
 
 - On the website, there are:
    + 1 homepage
-   + 1 landing page introducing the main website
+   + 1 landing page introducing the main website 
    + 2 pages of a login page and a register page
    + 1 page for a texting chat feed 
    + 1 page listing the video chatrooms of the user
@@ -16,9 +16,16 @@ Overview of the project
    + 1 page of prototyping the video call/meeting 
 	(please click on "Start a meeting" from the "Camping Club" chatroom to go to this page)
 
-- Due to my lack of coding skills, I apologize that apart from buttons that transition between pages, most of the functions on the website do not work properly as they should (for example, logging in, creating an account, texting (in the chat feed),  or starting a video call). The website consists of visual design components and the presentations of functions only, and no back-end functions were programmed.
+- As shown in the video, the initial screen transition diagram would be: 
+1. landing-page.html 
+-> 2.log-in.html or register.html 
+	(as the login function does not work, you can click on "Login" or "Sign Up", and they would both lead you to the homepage)
+-> 3. home.html
+-> from the homepage, you can access the other pages from the side navigation bar.
 
-- Moreover, as the target users are laptop users, ideally in their laptop's full screen, most parts of this website are not responsive for mobile and tablet screens.
+- Due to my lack of coding skills, I apologize that apart from buttons that transition between pages, most of the functions on the website do not work properly, as they should (for example, logging in, creating an account, texting (in the chat feed),  or starting a video call). The website consists of visual design components and the presentations of functions only, and no back-end functions were programmed.
+
+- Moreover, as the target users are laptop users, ideally in their laptop's full screen, most parts of this website are not responsive for mobile and tablet screens. I am sorry that the website's responsiveness has many rooms for improvement. 
 
 
 Disclaimer:
