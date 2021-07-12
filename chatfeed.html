@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./home.css">
+    <title>Chat</title>
+    <link rel="icon" href="./Illustrations/chat-girl.png">
+    <script src="https://kit.fontawesome.com/37ffba9538.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1 center border" style="background-color: white;" id="sidebar">
+                <div class="navestylemenublock">
+                    <div class="menulevel1" style="color: #9a77cf; font-size: 36px;">
+                        <i class="fas fa-calendar menu-icon" id="calendar-icon" onclick="openNav()" data-placement="top"
+                            data-toggle="tooltip" class="btn" type="button" data-original-title="Schedule"></i>
+                        <br><br>
+                        <a href="./home.html"><i style="color: #9a77cf; font-size: 34px;" class="fas fa-home menu-icon" data-placement="top"
+                            data-toggle="tooltip" class="btn" type="button" data-original-title="Home"></i></a>
+                        <br><br>
+                        <a href="./chatfeed.html" style="color: #fccd04;"><i class="fas fa-comments menu-icon"
+                                data-placement="top" data-toggle="tooltip" class="btn" type="button"
+                                data-original-title="Chat Feed"></i></a>
+                        <br><br>
+                        <a href="./video-chat.html" style="color: #9a77cf;"><i class="fas fa-video menu-icon"
+                                style="font-size: 34px;" data-placement="top" data-toggle="tooltip" class="btn"
+                                type="button" data-original-title="Chatrooms"></i></a>
+                        <br><br>
+                        <a href="#" style="color: #9a77cf;" data-toggle="modal"
+                        data-target="#user-modal"><i class="fas fa-user menu-icon" style="font-size: 34px;"
+                                data-placement="top" data-toggle="tooltip" class="btn" type="button"
+                                data-original-title="User"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="user-modal" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button"
+                                            class="close d-flex align-items-center justify-content-center"
+                                            data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true" class="ion-ios-close"
+                                                style="color: white;">X</span>
+                                        </button>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="col-md-4 d-flex">
+                                            <div
+                                                class="modal-body p-5 img d-flex color-1 text-center d-flex align-items-center">
+                                                <div class="text w-100" style="color: white;">
+                                                    <img class="card-img-top" style="border-radius: 10px;"
+                                                src="https://images.unsplash.com/photo-1475823678248-624fc6f85785?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                                                width="100%">
+                                                    <br><br>
+                                                    <h5>Stephanie Xiao</h5>
+                                                    <p>Toyo University</p>
+                                                    <br>
+                                                    <p><i class="fas fa-user-edit"></i> Edit </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-8 d-flex">
+                                            <div class="modal-body p-5 d-flex align-items-center">
+                                                <div class="text w-100 py-0 py-md-5">
+                                                    <h3 class="mb-4 py-3"  style="color: #a64ac9;"><i class="fas fa-address-card"></i> &#160;Profile</h3>
+                                                    <form action="#" class="signup-form">
+                                                        <div class="form-group mb-3 py-1">
+                                                            <label class="label text-muted" for="name">Email Address</label>
+                                                            <h6 style="font-weight: 400;">s1fxxxxxxxxx@toyo.jp &#160;&#160;&#160;<i class="fas fa-edit" style="font-size: 14px;"></i></h6>
+                                                        </div>
+                                                        <div class="form-group mb-3 py-1">
+                                                            <label class="label text-muted" for="email">Display Name</label>
+                                                            <h6 style="font-weight: 400;">Stephanie &#160;&#160;&#160;<i class="fas fa-edit" style="font-size: 14px;"></i></h6>
+                                                        </div>
+                                                        <div class="form-group mb-3 py-1">
+                                                            <label class="label text-muted" for="email">Bio</label>
+                                                            <h6 style="font-weight: 400;">I like eating Hotpot. &#160;&#160;&#160;<i class="fas fa-edit" style="font-size: 14px;"></i></h6>
+                                                        </div>
+                                                    </form>
+                                                    <br><br>
+                                                    <a href="./login.html"><button
+                                                            class="form-control btn btn-primary px-2"
+                                                            style="color: white;">Log Out</button></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+            </div>
+
+            <main class="col-md offset-md-1">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-left p-4" style="background-color: #A484D3; color: white;">
+                        <img src="./Illustrations/chat-girl-long-3.png" style="float: right; max-height: 140px;">
+                        <h1 class="mb-3 p-3" id="explore" style="font-weight: 600; color: #fccd04;">Chat Feed</h1>
+                        <h6 class="px-4">Texting, texting, texting</h6>
+                    </div>
+                </div>
+
+                <div id="mySidenav" class="sidenav text-center">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+                    <h3 style="color: #a64ac9;">Schedule</h3>
+                    <br>
+                    <div style="display:table-cell; vertical-align:middle; text-align:center" >
+                        <img src="https://images.unsplash.com/photo-1619443492967-f04dfa229b14?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80" style="border-radius: 25px;" width="50%">
+                        <br><br>
+                        <h5>Lunch with Jennifer</h5>
+                        <p>11:30, 2021/07/14</p>
+                        <button class="url-btn"><i class="fas fa-video"></i> &#160; Meeting URL</button>
+                        <br><br>
+                        <img src="https://images.unsplash.com/photo-1619253692124-56dd8f736ca3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" style="border-radius: 25px;" width="50%">
+                        <br><br>
+                        <h5>Dinner with Elliot</h5>
+                        <p>18:30, 2021/07/16</p>
+                        <button class="url-btn"><i class="fas fa-video"></i> &#160; Meeting URL</button>
+                        <br>
+                    </div>
+                </div>
+
+                <br>
+
+                
+<div class="container">
+    <!-- Content wrapper start -->
+    <div class="content-wrapper ">
+
+        <!-- Row start -->
+        <div class="row gutters">
+
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+                <div class="card-chat m-0">
+
+                    <!-- Row start -->
+                    <div class="row no-gutters">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-3 col-3">
+                            <div class="users-container">
+
+                                <!--chat search-->
+                                <div class="chat-search-box">
+                                    <div class="input-group">
+                                        <input class="form-control" placeholder="Search">
+                                        <div class="input-group-btn">
+                                            <button type="button" class="btn">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--users section-->
+                                <ul class="users">
+                                    <li class="person" data-chat="person1">
+                                        <div class="user">
+                                            <img src="./Illustrations/3-avatars-1.png" alt="Retail Admin">
+                                            <span class="status busy"></span>
+                                        </div>
+                                        <p class="name-time">
+                                            <span class="name">Circle Friends</span>&#160;&#160;
+                                            <span class="time">5 members</span>
+                                        </p>
+                                    </li>
+                                    <li class="person active-user" data-chat="person1">
+                                        <div class="user">
+                                            <img src="./Illustrations/3-avatars.png" alt="Retail Admin">
+                                            <span class="status offline"></span>
+                                        </div>
+                                        <p class="name-time">
+                                            <span class="name">Camping Club</span>&#160;&#160;
+                                            <span class="time">6 members</span>
+                                        </p>
+                                    </li>
+                                    <li class="person" data-chat="person2">
+                                        <div class="user">
+                                            <img src="./Illustrations/3-avatars-1.png" alt="Retail Admin">
+                                            <span class="status away"></span>
+                                        </div>
+                                        <p class="name-time">
+                                            <span class="name">Bestfriends Squad</span>&#160;&#160;
+                                            <span class="time">4 members</span>
+                                        </p>
+                                    </li>
+                                    <li class="person" data-chat="person3">
+                                        <div class="user">
+                                            <img src="./Illustrations/3-avatars-3.png" alt="Retail Admin">
+                                            <span class="status busy"></span>
+                                        </div>
+                                        <p class="name-time">
+                                            <span class="name">Practice Team</span>&#160;&#160;
+                                            <span class="time">4 members</span>
+                                        </p>
+                                    </li>
+                                    <li class="person" data-chat="person4">
+                                        <div class="user">
+                                            <img src="./Illustrations/3-avatars.png" alt="Retail Admin">
+                                            <span class="status offline"></span>
+                                        </div>
+                                        <p class="name-time">
+                                            <span class="name">Study Group #1</span>&#160;&#160;
+                                            <span class="time">6 members</span>
+                                        </p>
+                                    </li>
+                                    <li class="person" data-chat="person5">
+                                        <div class="user">
+                                            <img src="./Illustrations/3-avatars-3.png" alt="Retail Admin">
+                                            <span class="status away"></span>
+                                        </div>
+                                        <p class="name-time">
+                                            <span class="name">Study Group #2</span>&#160;&#160;
+                                            <span class="time">5 members</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-9 col-9">
+                            <div class="selected-user">
+                                <p style="float: left; padding-right: 20px;"><img src="./Illustrations/3-avatars.png" alt="Avatar" style="width:45px; border-radius: 50%;"></p>
+                                <span><span class="name">Camping Club</span></span>
+                                <a href="./video-call.html" style="float: right; text-decoration: none; color: #9a77cf;"><i class="fas fa-video"></i>&#160;</a>
+                            </div>
+                            <div class="chat-container">
+                                <ul class="chat-box chatContainerScroll">
+                                    <li class="chat-left">
+                                        <div class="chat-avatar">
+                                            <img src="./Illustrations/avatar-1.png" alt="Retail Admin">
+                                            <div class="chat-name">Isabella</div>
+                                        </div>
+                                        <div class="chat-text">Should we go camping on the 3rd of next month?
+                                            <br>Are you guys ok with that day?</div>
+                                        <div class="chat-hour">08:57 &#160;<span class="fa fa-check-circle"></span></div>
+                                    </li>
+                                    <li class="chat-right">
+                                        <div class="chat-hour">08:59 &#160;<span class="fa fa-check-circle"></span></div>
+                                        <div class="chat-text">Oh I can't, still the busy bee <br> How about the 5th?</div>
+                                        <div class="chat-avatar">
+                                            <img src="./Illustrations/avatar-2.png" alt="Retail Admin">
+                                            <div class="chat-name">Stephanie</div>
+                                        </div>
+                                    </li>
+                                    <li class="chat-left">
+                                        <div class="chat-avatar">
+                                            <img src="./Illustrations/avatar-3.png" alt="Retail Admin">
+                                            <div class="chat-name">Elliot</div>
+                                        </div>
+                                        <div class="chat-text">Both the 3rd and 5th are OK for me.
+                                            <br>Where should we go this time?</div>
+                                        <div class="chat-hour">07:00 &#160;<span class="fa fa-check-circle"></span></div>
+                                    </li>
+                                </ul>
+                                <div class="form-group mt-3 mb-0">
+                                    <textarea class="form-control" rows="1" placeholder="How about going to..." style="border-radius: 15px;"></textarea>
+                                
+                                    <button type="button" class="btn-chat" style="float: right;"><i class="fas fa-smile-wink"
+                                        data-placement="top" data-toggle="tooltip"
+                                        data-original-title="Emoji"></i></button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row end -->
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Row end -->
+
+    </div>
+    <!-- Content wrapper end -->
+
+</div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <br>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "450px";
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+     <script>
+        $('.tooltip-div').tooltip({
+            selector: "[data-toggle=tooltip]",
+            container: "body"
+        });
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
