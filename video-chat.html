@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./home.css">
     <title>Video Chat</title>
@@ -23,331 +22,286 @@
             <div class="col-md-1 center border" style="background-color: white;" id="sidebar">
                 <div class="navestylemenublock">
                     <div class="menulevel1" style="color: #9a77cf; font-size: 36px;">
-                        <i class="fas fa-calendar menu-icon" id="calendar-icon" onclick="openNav()" data-placement="top"
-                            data-toggle="tooltip" class="btn" type="button" data-original-title="Schedule"></i>
+                        <i class="fas fa-calendar menu-icon" id="calendar-icon" onclick="openNav()" data-placement="top" data-toggle="tooltip" class="btn" type="button" data-original-title="Schedule"></i>
                         <br><br>
                         <a href="./home.html"><i style="color: #9a77cf; font-size: 34px;" class="fas fa-home menu-icon" data-placement="top"
                             data-toggle="tooltip" class="btn" type="button" data-original-title="Home"></i></a>
                         <br><br>
-                        <a href="./chatfeed.html" style="color: #fccd04;"><i class="fas fa-comments menu-icon"
+                        <a href="./chatfeed.html" style="color: #9a77cf;"><i class="fas fa-comments menu-icon"
                                 data-placement="top" data-toggle="tooltip" class="btn" type="button"
                                 data-original-title="Chat Feed"></i></a>
                         <br><br>
-                        <a href="./video-chat.html" style="color: #9a77cf;"><i class="fas fa-video menu-icon"
+                        <a href="./video-chat.html" style="color: #fccd04;"><i class="fas fa-video menu-icon"
                                 style="font-size: 34px;" data-placement="top" data-toggle="tooltip" class="btn"
                                 type="button" data-original-title="Chatrooms"></i></a>
                         <br><br>
-                        <a href="#" style="color: #9a77cf;" data-toggle="modal"
-                        data-target="#user-modal"><i class="fas fa-user menu-icon" style="font-size: 34px;"
+                        <a style="color: #9a77cf;" data-toggle="modal" data-target="#user-modal"><i class="fas fa-user menu-icon" style="font-size: 34px;"
                                 data-placement="top" data-toggle="tooltip" class="btn" type="button"
                                 data-original-title="User"></i></a>
                     </div>
                 </div>
             </div>
 
-            <div class="modal fade" id="user-modal" tabindex="-1" role="dialog"
-                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button"
-                                            class="close d-flex align-items-center justify-content-center"
-                                            data-dismiss="modal" aria-label="Close">
+            <div class="modal fade" id="user-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true" class="ion-ios-close"
                                                 style="color: white;">X</span>
                                         </button>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-md-4 d-flex">
+                                <div class="modal-body p-5 img d-flex color-1 text-center d-flex align-items-center">
+                                    <div class="text w-100" style="color: white;">
+                                        <img class="card-img-top" style="border-radius: 10px;" src="https://images.unsplash.com/photo-1475823678248-624fc6f85785?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" width="100%">
+                                        <br><br>
+                                        <h5>Stephanie Xiao</h5>
+                                        <p>Toyo University</p>
+                                        <br>
+                                        <p><i class="fas fa-user-edit"></i> Edit </p>
                                     </div>
-                                    <div class="row no-gutters">
-                                        <div class="col-md-4 d-flex">
-                                            <div
-                                                class="modal-body p-5 img d-flex color-1 text-center d-flex align-items-center">
-                                                <div class="text w-100" style="color: white;">
-                                                    <img class="card-img-top" style="border-radius: 10px;"
-                                                src="https://images.unsplash.com/photo-1475823678248-624fc6f85785?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
-                                                width="100%">
-                                                    <br><br>
-                                                    <h5>Stephanie Xiao</h5>
-                                                    <p>Toyo University</p>
-                                                    <br>
-                                                    <p><i class="fas fa-user-edit"></i> Edit </p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
 
-                                        <div class="col-md-8 d-flex">
-                                            <div class="modal-body p-5 d-flex align-items-center">
-                                                <div class="text w-100 py-0 py-md-5">
-                                                    <h3 class="mb-4 py-3"  style="color: #a64ac9;"><i class="fas fa-address-card"></i> &#160;Profile</h3>
-                                                    <form action="#" class="signup-form">
-                                                        <div class="form-group mb-3 py-1">
-                                                            <label class="label text-muted" for="name">Email Address</label>
-                                                            <h6 style="font-weight: 400;">s1fxxxxxxxxx@toyo.jp &#160;&#160;&#160;<i class="fas fa-edit" style="font-size: 14px;"></i></h6>
-                                                        </div>
-                                                        <div class="form-group mb-3 py-1">
-                                                            <label class="label text-muted" for="email">Display Name</label>
-                                                            <h6 style="font-weight: 400;">Stephanie &#160;&#160;&#160;<i class="fas fa-edit" style="font-size: 14px;"></i></h6>
-                                                        </div>
-                                                        <div class="form-group mb-3 py-1">
-                                                            <label class="label text-muted" for="email">Bio</label>
-                                                            <h6 style="font-weight: 400;">I like eating Hotpot. &#160;&#160;&#160;<i class="fas fa-edit" style="font-size: 14px;"></i></h6>
-                                                        </div>
-                                                    </form>
-                                                    <br><br>
-                                                    <a href="./login.html"><button
+                            <div class="col-md-8 d-flex">
+                                <div class="modal-body p-5 d-flex align-items-center">
+                                    <div class="text w-100 py-0 py-md-5">
+                                        <h3 class="mb-4 py-3" style="color: #a64ac9;"><i class="fas fa-address-card"></i> &#160;Profile</h3>
+                                        <form action="#" class="signup-form">
+                                            <div class="form-group mb-3 py-1">
+                                                <label class="label text-muted" for="name">Email Address</label>
+                                                <h6 style="font-weight: 400;">s1fxxxxxxxxx@toyo.jp &#160;&#160;&#160;<i class="fas fa-edit" style="font-size: 14px;"></i></h6>
+                                            </div>
+                                            <div class="form-group mb-3 py-1">
+                                                <label class="label text-muted" for="email">Display Name</label>
+                                                <h6 style="font-weight: 400;">Stephanie &#160;&#160;&#160;<i class="fas fa-edit" style="font-size: 14px;"></i></h6>
+                                            </div>
+                                            <div class="form-group mb-3 py-1">
+                                                <label class="label text-muted" for="email">Bio</label>
+                                                <h6 style="font-weight: 400;">I like eating Hotpot. &#160;&#160;&#160;<i class="fas fa-edit" style="font-size: 14px;"></i></h6>
+                                            </div>
+                                        </form>
+                                        <br><br>
+                                        <a href="./login.html"><button
                                                             class="form-control btn btn-primary px-2"
                                                             style="color: white;">Log Out</button></a>
-                                                </div>
-                                            </div>
-                                        </div>
-
                                     </div>
-
                                 </div>
                             </div>
+
                         </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class="col-md offset-md-1">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 text-left p-4" style="background-color: #A484D3; color: white;">
+                    <img src="./Illustrations/video-girl-long.png" style="float: right; max-height: 140px;">
+                    <h1 class="mb-3 p-3" id="explore" style="font-weight: 600; color: #fccd04;">Video Chatrooms</h1>
+                    <h6 class="px-4">Virtual eating gatherings</h6>
+                </div>
             </div>
 
-            <main class="col-md offset-md-1">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 text-left p-4"
-                        style="background-color: #A484D3; color: white;">
-                        <img src="./Illustrations/video-girl-long.png" style="float: right; max-height: 140px;">
-                        <h1 class="mb-3 p-3" id="explore" style="font-weight: 600; color: #fccd04;">Video Chatrooms</h1>
-                        <h6 class="px-4">Virtual eating gatherings</h6>
-                    </div>
-                </div>
-
-                <div id="mySidenav" class="sidenav text-center">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <h3 style="color: #a64ac9;">Schedule</h3>
-                    <br>
-                    <div style="display:table-cell; vertical-align:middle; text-align:center" >
-                        <img src="https://images.unsplash.com/photo-1619443492967-f04dfa229b14?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80" style="border-radius: 25px;" width="50%">
-                        <br><br>
-                        <h5>Lunch with Jennifer</h5>
-                        <p>11:30, 2021/07/14</p>
-                        <button class="url-btn"><i class="fas fa-video"></i> &#160; Meeting URL</button>
-                        <br><br>
-                        <img src="https://images.unsplash.com/photo-1619253692124-56dd8f736ca3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" style="border-radius: 25px;" width="50%">
-                        <br><br>
-                        <h5>Dinner with Elliot</h5>
-                        <p>18:30, 2021/07/16</p>
-                        <button class="url-btn"><i class="fas fa-video"></i> &#160; Meeting URL</button>
-                        <br>
-                    </div>
-                </div>
-
+            <div id="mySidenav" class="sidenav text-center">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <h3 style="color: #a64ac9;">Schedule</h3>
                 <br>
+                <div style="display:table-cell; vertical-align:middle; text-align:center">
+                    <img src="https://images.unsplash.com/photo-1619443492967-f04dfa229b14?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80" style="border-radius: 25px;" width="50%">
+                    <br><br>
+                    <h5>Lunch with Jennifer</h5>
+                    <p>11:30, 2021/07/14</p>
+                    <button class="url-btn"><i class="fas fa-video"></i> &#160; Meeting URL</button>
+                    <br><br>
+                    <img src="https://images.unsplash.com/photo-1619253692124-56dd8f736ca3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" style="border-radius: 25px;" width="50%">
+                    <br><br>
+                    <h5>Dinner with Elliot</h5>
+                    <p>18:30, 2021/07/16</p>
+                    <button class="url-btn"><i class="fas fa-video"></i> &#160; Meeting URL</button>
+                    <br>
+                </div>
+            </div>
 
-                    <div class="content-wrapper ">
-                        <div class="row py-2">
-                            <div class="col-xs-12 col-sm-12 col-md-12 text-left">
-                                <div class="row row-no-margin px-5">
-                                    <div class="col-md-3">
-                                        <div class="card vid-card">
-                                            <a href="#"><img class="card-img-top" style="border-radius: 25px 25px 0px 0px;"
-                                                    src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
-                                                    width="80%"></a>
-                                            <div class="card-body">
-                                                <div style="line-height: 25px;">
-                                                    <p class="card-text"><span style="font-weight: 600; font-size: 22px;">
-                                                            Bestest Friends</span></p>
-                                                    <p style="float: left; padding-right: 10px;">
-                                                        <img src="https://www.w3schools.com/howto/img_avatar.png"
-                                                            alt="Avatar" style="width:20px; border-radius: 50%;">
-                                                        <img src="https://www.w3schools.com/howto/img_avatar.png"
-                                                            alt="Avatar" style="width:20px; border-radius: 50%;">
-                                                    </p>
-                                                    <p><span style="font-size: 14px;"> and 2 others</span></p>
-                                                </div>
-                                            </div>
+            <br>
+
+            <div class="content-wrapper ">
+                <div class="row py-2">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-left">
+                        <div class="row row-no-margin px-5">
+                            <div class="col-md-3">
+                                <div class="card vid-card">
+                                    <a href="#"><img class="card-img-top" style="border-radius: 25px 25px 0px 0px;" src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                                            width="80%"></a>
+                                    <div class="card-body">
+                                        <div style="line-height: 25px;">
+                                            <p class="card-text"><span style="font-weight: 600; font-size: 22px;">
+                                                    Bestest Friends</span></p>
+                                            <p style="float: left; padding-right: 10px;">
+                                                <img src="./Illustrations/avatar-4.png" alt="Avatar" style="width:20px; border-radius: 50%;">
+                                                <img src="./Illustrations/avatar-5.png" alt="Avatar" style="width:20px; border-radius: 50%;">
+                                            </p>
+                                            <p><span style="font-size: 14px;"> and 2 others</span></p>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
-                                        <div class="card vid-card">
-                                            <a href="#"><img class="card-img-top" style="border-radius: 25px 25px 0px 0px;"
-                                                    src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80"
-                                                    width="90%"></a>
-                                            <div class="card-body">
-                                                <div style="line-height: 25px;">
-                                                    <p class="card-text"><span style="font-weight: 600; font-size: 22px;">
-                                                            Sport Circle Friends</span></p>
-                                                    <p style="float: left; padding-right: 10px;">
-                                                        <img src="https://www.w3schools.com/howto/img_avatar.png"
-                                                            alt="Avatar" style="width:20px; border-radius: 50%;">
-                                                        <img src="https://www.w3schools.com/howto/img_avatar.png"
-                                                            alt="Avatar" style="width:20px; border-radius: 50%;">
-                                                    </p>
-                                                    <p><span style="font-size: 14px;"> and 2 others</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="card vid-card">
-                                            <a href="#"><img class="card-img-top" style="border-radius: 25px 25px 0px 0px;"
-                                                    src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
-                                                    width="90%"></a>
-                                            <div class="card-body">
-                                                <div style="line-height: 25px;">
-                                                    <p class="card-text"><span style="font-weight: 600; font-size: 22px;">
-                                                            Practice Team</span></p>
-                                                    <p style="float: left; padding-right: 10px;">
-                                                        <img src="https://www.w3schools.com/howto/img_avatar.png"
-                                                            alt="Avatar" style="width:20px; border-radius: 50%;">
-                                                        <img src="https://www.w3schools.com/howto/img_avatar.png"
-                                                            alt="Avatar" style="width:20px; border-radius: 50%;">
-                                                    </p>
-                                                    <p><span style="font-size: 14px;"> and 2 others</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="card vid-card">
-                                            <a href="./video-call.html"><img class="card-img-top"
-                                                    style="border-radius: 25px 25px 0px 0px;"
-                                                    src="https://images.unsplash.com/photo-1520685303244-0461943ece6e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
-                                                    width="90%"></a>
-                                            <div class="card-body">
-                                                <div style="line-height: 25px;">
-                                                    <p class="card-text"><span style="font-weight: 600; font-size: 22px;">
-                                                            Camping Club</span></p>
-                                                    <p style="float: left; padding-right: 10px;">
-                                                        <img src="https://www.w3schools.com/howto/img_avatar.png"
-                                                            alt="Avatar" style="width:20px; border-radius: 50%;">
-                                                        <img src="https://www.w3schools.com/howto/img_avatar.png"
-                                                            alt="Avatar" style="width:20px; border-radius: 50%;">
-                                                    </p>
-                                                    <p><span style="font-size: 14px;"> and 4 others</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-    
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="row py-2">
-                            <div class="col-xs-12 col-sm-12 col-md-12 text-left">
-                                <div class="row row-no-margin px-5">
-                                    <div class="col-md-3">
-                                        <div class="card vid-card">
-                                            <a href="#"><img class="card-img-top"
-                                                    style="border-radius: 25px 25px 0px 0px;"
-                                                    src="https://images.unsplash.com/photo-1486704155675-e4c07f8ad160?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
-                                                    width="90%"></a>
-                                            <div class="card-body">
-                                                <div style="line-height: 25px;">
-                                                    <p class="card-text"><span
-                                                            style="font-weight: 600; font-size: 22px;">
-                                                            Study Group #1</span></p>
-                                                    <p style="float: left; padding-right: 10px;">
-                                                        <img src="https://www.w3schools.com/howto/img_avatar.png"
-                                                            alt="Avatar" style="width:20px; border-radius: 50%;">
-                                                        <img src="https://www.w3schools.com/howto/img_avatar.png"
-                                                            alt="Avatar" style="width:20px; border-radius: 50%;">
-                                                    </p>
-                                                    <p><span style="font-size: 14px;"> and 2 others</span></p>
-                                                </div>
-                                            </div>
+                            <div class="col-md-3">
+                                <div class="card vid-card">
+                                    <a href="#"><img class="card-img-top" style="border-radius: 25px 25px 0px 0px;" src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80"
+                                            width="90%"></a>
+                                    <div class="card-body">
+                                        <div style="line-height: 25px;">
+                                            <p class="card-text"><span style="font-weight: 600; font-size: 22px;">
+                                                    Sport Circle Friends</span></p>
+                                            <p style="float: left; padding-right: 10px;">
+                                                <img src="./Illustrations/avatar-3.png" alt="Avatar" style="width:20px; border-radius: 50%;">
+                                                <img src="./Illustrations/avatar-4.png" alt="Avatar" style="width:20px; border-radius: 50%;">
+                                            </p>
+                                            <p><span style="font-size: 14px;"> and 2 others</span></p>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
-                                        <div class="card vid-card">
-                                            <a href="#"><img class="card-img-top"
-                                                    style="border-radius: 25px 25px 0px 0px;"
-                                                    src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
-                                                    width="90%"></a>
-                                            <div class="card-body">
-                                                <div style="line-height: 25px;">
-                                                    <p class="card-text"><span
-                                                            style="font-weight: 600; font-size: 22px;">
-                                                            Dessert Lovers</span></p>
-                                                    <p style="float: left; padding-right: 10px;">
-                                                        <img src="https://www.w3schools.com/howto/img_avatar.png"
-                                                            alt="Avatar" style="width:20px; border-radius: 50%;">
-                                                        <img src="https://www.w3schools.com/howto/img_avatar.png"
-                                                            alt="Avatar" style="width:20px; border-radius: 50%;">
-                                                    </p>
-                                                    <p><span style="font-size: 14px;"> and 2 others</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="card vid-card">
-                                            <a href="#"><img class="card-img-top"
-                                                    style="border-radius: 25px 25px 0px 0px;"
-                                                    src="https://images.unsplash.com/photo-1587029622793-f51e81058f2d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
-                                                    width="90%"></a>
-                                            <div class="card-body">
-                                                <div style="line-height: 25px;">
-                                                    <p class="card-text"><span
-                                                            style="font-weight: 600; font-size: 22px;">
-                                                            Instant Noodles</span></p>
-                                                    <p style="float: left; padding-right: 10px;">
-                                                        <img src="https://www.w3schools.com/howto/img_avatar.png"
-                                                            alt="Avatar" style="width:20px; border-radius: 50%;">
-                                                        <img src="https://www.w3schools.com/howto/img_avatar.png"
-                                                            alt="Avatar" style="width:20px; border-radius: 50%;">
-                                                    </p>
-                                                    <p><span style="font-size: 14px;"> and 2 others</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="card vid-card">
-                                            <a href="#"><img class="card-img-top"
-                                                    style="border-radius: 25px 25px 0px 0px;"
-                                                    src="https://images.unsplash.com/photo-1599295065147-7091470034f2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1546&q=80"
-                                                    width="90%"></a>
-                                            <div class="card-body">
-                                                <div style="line-height: 25px;">
-                                                    <p class="card-text"><span
-                                                            style="font-weight: 600; font-size: 22px;">
-                                                            Study Group #2</span></p>
-                                                    <p style="float: left; padding-right: 10px;">
-                                                        <img src="https://www.w3schools.com/howto/img_avatar.png"
-                                                            alt="Avatar" style="width:20px; border-radius: 50%;">
-                                                        <img src="https://www.w3schools.com/howto/img_avatar.png"
-                                                            alt="Avatar" style="width:20px; border-radius: 50%;">
-                                                    </p>
-                                                    <p><span style="font-size: 14px;"> and 2 others</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
+                            <div class="col-md-3">
+                                <div class="card vid-card">
+                                    <a href="#"><img class="card-img-top" style="border-radius: 25px 25px 0px 0px;" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                                            width="90%"></a>
+                                    <div class="card-body">
+                                        <div style="line-height: 25px;">
+                                            <p class="card-text"><span style="font-weight: 600; font-size: 22px;">
+                                                    Practice Team</span></p>
+                                            <p style="float: left; padding-right: 10px;">
+                                                <img src="./Illustrations/avatar-4.png" alt="Avatar" style="width:20px; border-radius: 50%;">
+                                                <img src="./Illustrations/avatar-6.png" alt="Avatar" style="width:20px; border-radius: 50%;">
+                                            </p>
+                                            <p><span style="font-size: 14px;"> and 2 others</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card vid-card">
+                                    <a href="./video-call.html"><img class="card-img-top" style="border-radius: 25px 25px 0px 0px;" src="https://images.unsplash.com/photo-1520685303244-0461943ece6e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                                            width="90%"></a>
+                                    <div class="card-body">
+                                        <div style="line-height: 25px;">
+                                            <p class="card-text"><span style="font-weight: 600; font-size: 22px;">
+                                                    Camping Club</span></p>
+                                            <p style="float: left; padding-right: 10px;">
+                                                <img src="./Illustrations/avatar-1.png" alt="Avatar" style="width:20px; border-radius: 50%;">
+                                                <img src="./Illustrations/avatar-3.png" alt="Avatar" style="width:20px; border-radius: 50%;">
+                                            </p>
+                                            <p><span style="font-size: 14px;"> and 4 others</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-
-                </main>
                 </div>
 
-        </div>
+                <div class="row py-2">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-left">
+                        <div class="row row-no-margin px-5">
+                            <div class="col-md-3">
+                                <div class="card vid-card">
+                                    <a href="#"><img class="card-img-top" style="border-radius: 25px 25px 0px 0px;" src="https://images.unsplash.com/photo-1486704155675-e4c07f8ad160?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                                            width="90%"></a>
+                                    <div class="card-body">
+                                        <div style="line-height: 25px;">
+                                            <p class="card-text"><span style="font-weight: 600; font-size: 22px;">
+                                                            Study Group #1</span></p>
+                                            <p style="float: left; padding-right: 10px;">
+                                                <img src="./Illustrations/avatar-2.png" alt="Avatar" style="width:20px; border-radius: 50%;">
+                                                <img src="./Illustrations/avatar-3.png" alt="Avatar" style="width:20px; border-radius: 50%;">
+                                            </p>
+                                            <p><span style="font-size: 14px;"> and 2 others</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card vid-card">
+                                    <a href="#"><img class="card-img-top" style="border-radius: 25px 25px 0px 0px;" src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                                            width="90%"></a>
+                                    <div class="card-body">
+                                        <div style="line-height: 25px;">
+                                            <p class="card-text"><span style="font-weight: 600; font-size: 22px;">
+                                                            Dessert Lovers</span></p>
+                                            <p style="float: left; padding-right: 10px;">
+                                                <img src="./Illustrations/avatar-3.png" alt="Avatar" style="width:20px; border-radius: 50%;">
+                                                <img src="./Illustrations/avatar-5.png" alt="Avatar" style="width:20px; border-radius: 50%;">
+                                            </p>
+                                            <p><span style="font-size: 14px;"> and 2 others</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card vid-card">
+                                    <a href="#"><img class="card-img-top" style="border-radius: 25px 25px 0px 0px;" src="https://images.unsplash.com/photo-1587029622793-f51e81058f2d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                                            width="90%"></a>
+                                    <div class="card-body">
+                                        <div style="line-height: 25px;">
+                                            <p class="card-text"><span style="font-weight: 600; font-size: 22px;">
+                                                            Instant Noodles</span></p>
+                                            <p style="float: left; padding-right: 10px;">
+                                                <img src="./Illustrations/avatar-6.png" alt="Avatar" style="width:20px; border-radius: 50%;">
+                                                <img src="./Illustrations/avatar-5.png" alt="Avatar" style="width:20px; border-radius: 50%;">
+                                            </p>
+                                            <p><span style="font-size: 14px;"> and 2 others</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card vid-card">
+                                    <a href="#"><img class="card-img-top" style="border-radius: 25px 25px 0px 0px;" src="https://images.unsplash.com/photo-1599295065147-7091470034f2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1546&q=80"
+                                            width="90%"></a>
+                                    <div class="card-body">
+                                        <div style="line-height: 25px;">
+                                            <p class="card-text"><span style="font-weight: 600; font-size: 22px;">
+                                                            Study Group #2</span></p>
+                                            <p style="float: left; padding-right: 10px;">
+                                                <img src="./Illustrations/avatar-1.png" alt="Avatar" style="width:20px; border-radius: 50%;">
+                                                <img src="./Illustrations/avatar-6.png" alt="Avatar" style="width:20px; border-radius: 50%;">
+                                            </p>
+                                            <p><span style="font-size: 14px;"> and 2 others</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    </div>
 
 
     <br>
     <script>
-        /* Set the width of the side navigation to 250px */
         function openNav() {
             document.getElementById("mySidenav").style.width = "450px";
-            document.getElementById("overlay").style.display = "block";
+            document.getElementById("calendar-icon").style.color = "#fccd04";
         }
 
-        /* Set the width of the side navigation to 0 */
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("overlay").style.display = "none";
+            document.getElementById("calendar-icon").style.color = "#9a77cf";
         }
     </script>
-     <script>
-        // tooltip demo
+    <script>
         $('.tooltip-div').tooltip({
             selector: "[data-toggle=tooltip]",
             container: "body"

@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./home.css">
     <title>Communication</title>
@@ -23,11 +22,9 @@
             <div class="col-md-1 center border" style="background-color: white;" id="sidebar">
                 <div class="navestylemenublock">
                     <div class="menulevel1" style="color: #9a77cf; font-size: 36px;">
-                        <i class="fas fa-calendar menu-icon" id="calendar-icon" onclick="openNav()" data-placement="top"
-                            data-toggle="tooltip" class="btn" type="button" data-original-title="Schedule"></i>
+                        <i class="fas fa-calendar menu-icon" id="calendar-icon" onclick="openNav()" data-placement="top" data-toggle="tooltip" class="btn" type="button" data-original-title="Schedule"></i>
                         <br><br>
-                        <i style="color: #fccd04; font-size: 34px;" class="fas fa-home menu-icon" data-placement="top"
-                            data-toggle="tooltip" class="btn" type="button" data-original-title="Home"></i>
+                        <i style="color: #fccd04; font-size: 34px;" class="fas fa-home menu-icon" data-placement="top" data-toggle="tooltip" class="btn" type="button" data-original-title="Home"></i>
                         <br><br>
                         <a href="./chatfeed.html" style="color: #9a77cf;"><i class="fas fa-comments menu-icon"
                                 data-placement="top" data-toggle="tooltip" class="btn" type="button"
@@ -37,84 +34,75 @@
                                 style="font-size: 34px;" data-placement="top" data-toggle="tooltip" class="btn"
                                 type="button" data-original-title="Chatrooms"></i></a>
                         <br><br>
-                        <a href="#" style="color: #9a77cf;" data-toggle="modal"
-                        data-target="#user-modal"><i class="fas fa-user menu-icon" style="font-size: 34px;"
+                        <a style="color: #9a77cf;" data-toggle="modal" data-target="#user-modal"><i class="fas fa-user menu-icon" style="font-size: 34px;"
                                 data-placement="top" data-toggle="tooltip" class="btn" type="button"
                                 data-original-title="User"></i></a>
                     </div>
                 </div>
             </div>
 
-            <div class="modal fade" id="user-modal" tabindex="-1" role="dialog"
-                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button"
-                                            class="close d-flex align-items-center justify-content-center"
-                                            data-dismiss="modal" aria-label="Close">
+            <div class="modal fade" id="user-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true" class="ion-ios-close"
                                                 style="color: white;">X</span>
                                         </button>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-md-5 d-flex">
+                                <div class="modal-body p-5 img d-flex color-1 text-center d-flex align-items-center">
+                                    <div class="text w-100" style="color: white;">
+                                        <img class="card-img-top" style="border-radius: 10px;" src="https://images.unsplash.com/photo-1475823678248-624fc6f85785?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" width="100%">
+                                        <br><br>
+                                        <h5>Stephanie Xiao</h5>
+                                        <p>Toyo University</p>
+                                        <br>
+                                        <p><i class="fas fa-user-edit"></i> Edit </p>
                                     </div>
-                                    <div class="row no-gutters">
-                                        <div class="col-md-4 d-flex">
-                                            <div
-                                                class="modal-body p-5 img d-flex color-1 text-center d-flex align-items-center">
-                                                <div class="text w-100" style="color: white;">
-                                                    <img class="card-img-top" style="border-radius: 10px;"
-                                                src="https://images.unsplash.com/photo-1475823678248-624fc6f85785?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
-                                                width="100%">
-                                                    <br><br>
-                                                    <h5>Stephanie Xiao</h5>
-                                                    <p>Toyo University</p>
-                                                    <br>
-                                                    <p><i class="fas fa-user-edit"></i> Edit </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-8 d-flex">
-                                            <div class="modal-body p-5 d-flex align-items-center">
-                                                <div class="text w-100 py-0 py-md-5">
-                                                    <h3 class="mb-4 py-3"  style="color: #a64ac9;"><i class="fas fa-address-card"></i> &#160;Profile</h3>
-                                                    <form action="#" class="signup-form">
-                                                        <div class="form-group mb-3 py-1">
-                                                            <label class="label text-muted" for="name">Email Address</label>
-                                                            <h6 style="font-weight: 400;">s1fxxxxxxxxx@toyo.jp &#160;&#160;&#160;<i class="fas fa-edit" style="font-size: 14px;"></i></h6>
-                                                        </div>
-                                                        <div class="form-group mb-3 py-1">
-                                                            <label class="label text-muted" for="email">Display Name</label>
-                                                            <h6 style="font-weight: 400;">Stephanie &#160;&#160;&#160;<i class="fas fa-edit" style="font-size: 14px;"></i></h6>
-                                                        </div>
-                                                        <div class="form-group mb-3 py-1">
-                                                            <label class="label text-muted" for="email">Bio</label>
-                                                            <h6 style="font-weight: 400;">I like eating Hotpot. &#160;&#160;&#160;<i class="fas fa-edit" style="font-size: 14px;"></i></h6>
-                                                        </div>
-                                                    </form>
-                                                    <br><br>
-                                                    <a href="./login.html"><button
-                                                            class="form-control btn btn-primary px-2"
-                                                            style="color: white;">Log Out</button></a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
                                 </div>
                             </div>
+
+                            <div class="col-md-7 d-flex">
+                                <div class="modal-body p-5 d-flex align-items-center">
+                                    <div class="text w-100 py-0 py-md-5">
+                                        <h3 class="mb-4 py-3" style="color: #a64ac9;"><i class="fas fa-address-card"></i> &#160;Profile</h3>
+                                        <form action="#" class="signup-form">
+                                            <div class="form-group mb-3 py-1">
+                                                <label class="label text-muted" for="name">Email Address</label>
+                                                <h6 style="font-weight: 400;">s1fxxxxxxxxx@toyo.jp &#160;&#160;&#160;<i class="fas fa-edit" style="font-size: 14px;"></i></h6>
+                                            </div>
+                                            <div class="form-group mb-3 py-1">
+                                                <label class="label text-muted" for="email">Display Name</label>
+                                                <h6 style="font-weight: 400;">Stephanie &#160;&#160;&#160;<i class="fas fa-edit" style="font-size: 14px;"></i></h6>
+                                            </div>
+                                            <div class="form-group mb-3 py-1">
+                                                <label class="label text-muted" for="email">Bio</label>
+                                                <h6 style="font-weight: 400;">I like eating Hotpot. &#160;&#160;&#160;<i class="fas fa-edit" style="font-size: 14px;"></i></h6>
+                                            </div>
+                                        </form>
+                                        <br><br>
+                                        <a href="./login.html"><button
+                                                            class="form-control btn btn-primary px-2"
+                                                            style="color: white;">Log Out</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
+
+                    </div>
+                </div>
+            </div>
 
             <main class="col-md offset-md-1">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 text-center p-4"
-                        style="background-color: #9a77cf; color: white;">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center p-4" style="background-color: #9a77cf; color: white;">
                         <img src="./Illustrations/eating-girl.png" style="float: right; max-width: 300px;">
                         <img src="./Illustrations/eating-girl2.png" style="float: left; max-width: 300px;">
                         <h6 class="mb-3 p-2">IsshoTabe</h6>
-                        <h1 class="mb-3 p-4" id="explore" style="font-weight: 600; color: #fccd04;">Enjoying meals,
-                            sharing stories </h1>
+                        <h1 class="mb-3 p-4" id="explore" style="font-weight: 600; color: #fccd04;">Enjoying meals, sharing stories </h1>
                         <h6 class="mb-3 px-4">Communication website for university students to socialize while eating
                             </h5>
                     </div>
@@ -122,19 +110,16 @@
 
                 <div id="mySidenav" class="sidenav text-center">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <!-- add id=overlay somewhere -->
                     <h3 style="color: #a64ac9;">Schedule</h3>
                     <br>
                     <div style="display:table-cell; vertical-align:middle; text-align:center">
-                        <img src="https://images.unsplash.com/photo-1619443492967-f04dfa229b14?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80"
-                            style="border-radius: 25px;" width="50%">
+                        <img src="https://images.unsplash.com/photo-1619443492967-f04dfa229b14?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80" style="border-radius: 25px;" width="50%">
                         <br><br>
                         <h5>Lunch with Jennifer</h5>
                         <p>11:30, 2021/07/14</p>
                         <button class="url-btn"><i class="fas fa-video"></i> &#160; Meeting URL</button>
                         <br><br>
-                        <img src="https://images.unsplash.com/photo-1619253692124-56dd8f736ca3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
-                            style="border-radius: 25px;" width="50%">
+                        <img src="https://images.unsplash.com/photo-1619253692124-56dd8f736ca3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" style="border-radius: 25px;" width="50%">
                         <br><br>
                         <h5>Dinner with Elliot</h5>
                         <p>18:30, 2021/07/16</p>
@@ -153,26 +138,21 @@
 
 
                     <div id="outer">
-                        <div class="inner"><button class="q-actions-btn" data-toggle="modal"
-                                data-target="#video-modal"><i class="fas fa-video"></i> &#160; Create a video
+                        <div class="inner"><button class="q-actions-btn" data-toggle="modal" data-target="#video-modal"><i class="fas fa-video"></i> &#160; Create a video
                                 chatroom</button></div>
 
-                        <div class="modal fade" id="video-modal" tabindex="-1" role="dialog"
-                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <button type="button"
-                                            class="close d-flex align-items-center justify-content-center"
-                                            data-dismiss="modal" aria-label="Close">
+                                        <button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true" class="ion-ios-close"
                                                 style="color: white;">X</span>
                                         </button>
                                     </div>
                                     <div class="row no-gutters">
                                         <div class="col-md-3 d-flex">
-                                            <div
-                                                class="modal-body p-5 img d-flex color-1 text-center d-flex align-items-center">
+                                            <div class="modal-body p-5 img d-flex color-1 text-center d-flex align-items-center">
                                                 <div class="text w-100" style="color: white;">
                                                     <h5>Enjoy hanging out with friends online</h5>
                                                 </div>
@@ -182,15 +162,11 @@
                                         <div class="col-md-9 d-flex">
                                             <div class="modal-body p-5 d-flex align-items-center">
                                                 <div class="text w-100 py-0 py-md-5">
-                                                    <h3 class="mb-4 py-3"><i class="fas fa-video"></i> &#160;Create A
-                                                        Video Chatroom</h3>
+                                                    <h3 class="mb-4 py-3"><i class="fas fa-video"></i> &#160;Create A Video Chatroom</h3>
                                                     <form action="#" class="signup-form">
                                                         <div class="form-group mb-3">
                                                             <label class="label" for="name">Chatroom Name</label>
-                                                            <input
-                                                                style="background-color: #f1f1f1; border-radius: 5px;"
-                                                                type="text" class="form-control"
-                                                                placeholder="Camping Club">
+                                                            <input style="background-color: #f1f1f1; border-radius: 5px;" type="text" class="form-control" placeholder="Camping Club">
                                                         </div>
                                                         <div class="form-group mb-3">
                                                             <label class="label" for="email">Meeting URL</label>
@@ -201,18 +177,12 @@
                                                         <div class="form-group mb-3">
                                                             <label class="label" for="password">Invite friends</label>
                                                             <div class="dropdown show">
-                                                                <a class="btn dropdown-toggle" href="#"
-                                                                    style="background-color: #f1f1f1; border-radius: 5px;"
-                                                                    role="button" id="dropdownMenuLink"
-                                                                    data-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <a class="btn dropdown-toggle" href="#" style="background-color: #f1f1f1; border-radius: 5px;" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     Friend list
                                                                 </a>
 
-                                                                <div class="dropdown-menu"
-                                                                    aria-labelledby="dropdownMenuLink">
-                                                                    <a class="dropdown-item" href="#">Jennifer</a><span
-                                                                        class="fill-control-indicator"></span>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                                    <a class="dropdown-item" href="#">Jennifer</a><span class="fill-control-indicator"></span>
                                                                     <a class="dropdown-item" href="#">Elliot</a>
                                                                     <a class="dropdown-item" href="#">Maeve</a>
                                                                     <a class="dropdown-item" href="#">Isabella</a>
@@ -249,26 +219,21 @@
                             </div>
                         </div>
 
-                        <div class="inner"><button class="q-actions-btn" data-toggle="modal"
-                                data-target="#chat-modal"><i class="fas fa-comment-dots"></i> &#160;
+                        <div class="inner"><button class="q-actions-btn" data-toggle="modal" data-target="#chat-modal"><i class="fas fa-comment-dots"></i> &#160;
                                 Create a group chat</button></div>
 
-                        <div class="modal fade" id="chat-modal" tabindex="-1" role="dialog"
-                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal fade" id="chat-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <button type="button"
-                                            class="close d-flex align-items-center justify-content-center"
-                                            data-dismiss="modal" aria-label="Close">
+                                        <button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true" class="ion-ios-close"
                                                 style="color: white;">X</span>
                                         </button>
                                     </div>
                                     <div class="row no-gutters">
                                         <div class="col-md-3 d-flex">
-                                            <div
-                                                class="modal-body p-5 img d-flex color-1 text-center d-flex align-items-center">
+                                            <div class="modal-body p-5 img d-flex color-1 text-center d-flex align-items-center">
                                                 <div class="text w-100" style="color: white;">
                                                     <h5>Enjoy texting with your friends</h5>
                                                 </div>
@@ -278,33 +243,22 @@
                                         <div class="col-md-9 d-flex">
                                             <div class="modal-body p-5 d-flex align-items-center">
                                                 <div class="text w-100 py-0 py-md-5">
-                                                    <h3 class="mb-4 py-3"><i class="fas fa-comment-dots"></i>
-                                                        &#160;Create A
-                                                        Group Chat</h3>
+                                                    <h3 class="mb-4 py-3"><i class="fas fa-comment-dots"></i> &#160;Create A Group Chat</h3>
                                                     <form action="#" class="signup-form">
                                                         <div class="form-group mb-3">
                                                             <label class="label" for="name">Groupchat Name</label>
-                                                            <input
-                                                                style="background-color: #f1f1f1; border-radius: 5px;"
-                                                                type="text" class="form-control"
-                                                                placeholder="Circle Friends">
+                                                            <input style="background-color: #f1f1f1; border-radius: 5px;" type="text" class="form-control" placeholder="Circle Friends">
                                                         </div>
                                                         <br>
                                                         <div class="form-group mb-3">
                                                             <label class="label" for="password">Invite friends</label>
                                                             <div class="dropdown show">
-                                                                <a class="btn dropdown-toggle" href="#"
-                                                                    style="background-color: #f1f1f1; border-radius: 5px;"
-                                                                    role="button" id="dropdownMenuLink"
-                                                                    data-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <a class="btn dropdown-toggle" href="#" style="background-color: #f1f1f1; border-radius: 5px;" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     Friend list
                                                                 </a>
 
-                                                                <div class="dropdown-menu"
-                                                                    aria-labelledby="dropdownMenuLink">
-                                                                    <a class="dropdown-item" href="#">Jennifer</a><span
-                                                                        class="fill-control-indicator"></span>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                                    <a class="dropdown-item" href="#">Jennifer</a><span class="fill-control-indicator"></span>
                                                                     <a class="dropdown-item" href="#">Elliot</a>
                                                                     <a class="dropdown-item" href="#">Maeve</a>
                                                                     <a class="dropdown-item" href="#">Isabella</a>
@@ -316,13 +270,11 @@
 
                                                         </div>
                                                         <br>
-                                                        <div class="form-group">
-                                                            <a href="#"><button
-                                                                    class="form-control btn btn-primary px-3"
-                                                                    style="color: white;">Create a group chat
-                                                                </button></a>
-                                                        </div>
                                                     </form>
+                                                    <a href="./chatfeed.html"><button
+                                                        class="form-control btn btn-primary px-3"
+                                                        style="color: white;">Create a group chat
+                                                    </button></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -332,8 +284,86 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="inner"><button class="q-actions-btn"><i class="fas fa-calendar-check"></i> &#160;
+                        <div class="inner"><button class="q-actions-btn" data-toggle="modal" data-target="#schedule-modal"><i class="fas fa-calendar-check"></i> &#160;
                                 Set appointment</button></div>
+
+                        <div class="modal fade" id="schedule-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true" class="ion-ios-close"
+                                                        style="color: white;">X</span>
+                                                </button>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex">
+                                            <div class="modal-body p-5 img d-flex color-1 text-center d-flex align-items-center">
+                                                <div class="text w-100" style="color: white;">
+                                                    <h5>Enjoy hanging out with friends online</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-9 d-flex">
+                                            <div class="modal-body p-5 d-flex align-items-center">
+                                                <div class="text w-100 py-0 py-md-5">
+                                                    <h3 class="mb-4 py-3"><i class="fas fa-video"></i> &#160;Create A Video Chatroom</h3>
+                                                    <form action="#" class="signup-form">
+                                                        <div class="form-group mb-3">
+                                                            <label class="label" for="name">Chatroom Name</label>
+                                                            <input style="background-color: #f1f1f1; border-radius: 5px;" type="text" class="form-control" placeholder="Camping Club">
+                                                        </div>
+                                                        <div class="form-group mb-3">
+                                                            <label class="label" for="email">Meeting URL</label>
+                                                            <a href="#" style="color: #a64ac9; text-decoration: none;">
+                                                                <h5>Lorem.ipsum.com/camp-club-123</h5>
+                                                            </a>
+                                                        </div>
+                                                        <div class="form-group mb-3">
+                                                            <label class="label" for="password">Invite friends</label>
+                                                            <div class="dropdown show">
+                                                                <a class="btn dropdown-toggle" href="#" style="background-color: #f1f1f1; border-radius: 5px;" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                            Friend list
+                                                                        </a>
+
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                                    <a class="dropdown-item" href="#">Jennifer</a><span class="fill-control-indicator"></span>
+                                                                    <a class="dropdown-item" href="#">Elliot</a>
+                                                                    <a class="dropdown-item" href="#">Maeve</a>
+                                                                    <a class="dropdown-item" href="#">Isabella</a>
+                                                                    <a class="dropdown-item" href="#">Stephanie</a>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <a class="dropdown-item" href="#">Others</a>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="form-group d-md-flex py-2">
+                                                            <div class="form-check w-100 text-left">
+                                                                <label class="custom-control fill-checkbox">
+                                                                            <input type="checkbox" class="fill-control-input">
+                                                                            <span class="fill-control-indicator"></span>
+                                                                            <span class="fill-control-description">Public
+                                                                                URL</span>
+                                                                        </label>
+                                                            </div>
+                                                        </div>
+                                                        <br>
+                                                    </form>
+                                                    <a href="./video-call.html"><button
+                                                                    class="form-control btn btn-primary px-3"
+                                                                    style="color: white;">Create video
+                                                                    chatroom</button></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <br><br><br><br>
@@ -350,18 +380,15 @@
                             <div class="row row-no-margin px-5">
                                 <div class="col-md-3">
                                     <div class="card vid-card">
-                                        <a href="#"><img class="card-img-top" style="border-radius: 25px 25px 0px 0px;"
-                                                src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                                        <a href="#"><img class="card-img-top" style="border-radius: 25px 25px 0px 0px;" src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
                                                 width="80%"></a>
                                         <div class="card-body">
                                             <div style="line-height: 25px;">
                                                 <p class="card-text"><span style="font-weight: 600; font-size: 22px;">
                                                         Bestest Friends</span></p>
                                                 <p style="float: left; padding-right: 10px;">
-                                                    <img src="https://www.w3schools.com/howto/img_avatar.png"
-                                                        alt="Avatar" style="width:20px; border-radius: 50%;">
-                                                    <img src="https://www.w3schools.com/howto/img_avatar.png"
-                                                        alt="Avatar" style="width:20px; border-radius: 50%;">
+                                                    <img src="./Illustrations/avatar-4.png" alt="Avatar" style="width:20px; border-radius: 50%;">
+                                                    <img src="./Illustrations/avatar-5.png" alt="Avatar" style="width:20px; border-radius: 50%;">
                                                 </p>
                                                 <p><span style="font-size: 14px;"> and 2 others</span></p>
                                             </div>
@@ -370,18 +397,15 @@
                                 </div>
                                 <div class="col-md-3">
                                     <div class="card vid-card">
-                                        <a href="#"><img class="card-img-top" style="border-radius: 25px 25px 0px 0px;"
-                                                src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80"
+                                        <a href="#"><img class="card-img-top" style="border-radius: 25px 25px 0px 0px;" src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80"
                                                 width="90%"></a>
                                         <div class="card-body">
                                             <div style="line-height: 25px;">
                                                 <p class="card-text"><span style="font-weight: 600; font-size: 22px;">
                                                         Sport Circle Friends</span></p>
                                                 <p style="float: left; padding-right: 10px;">
-                                                    <img src="https://www.w3schools.com/howto/img_avatar.png"
-                                                        alt="Avatar" style="width:20px; border-radius: 50%;">
-                                                    <img src="https://www.w3schools.com/howto/img_avatar.png"
-                                                        alt="Avatar" style="width:20px; border-radius: 50%;">
+                                                    <img src="./Illustrations/avatar-3.png" alt="Avatar" style="width:20px; border-radius: 50%;">
+                                                    <img src="./Illustrations/avatar-4.png" alt="Avatar" style="width:20px; border-radius: 50%;">
                                                 </p>
                                                 <p><span style="font-size: 14px;"> and 2 others</span></p>
                                             </div>
@@ -390,18 +414,15 @@
                                 </div>
                                 <div class="col-md-3">
                                     <div class="card vid-card">
-                                        <a href="#"><img class="card-img-top" style="border-radius: 25px 25px 0px 0px;"
-                                                src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                                        <a href="#"><img class="card-img-top" style="border-radius: 25px 25px 0px 0px;" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
                                                 width="90%"></a>
                                         <div class="card-body">
                                             <div style="line-height: 25px;">
                                                 <p class="card-text"><span style="font-weight: 600; font-size: 22px;">
                                                         Practice Team</span></p>
                                                 <p style="float: left; padding-right: 10px;">
-                                                    <img src="https://www.w3schools.com/howto/img_avatar.png"
-                                                        alt="Avatar" style="width:20px; border-radius: 50%;">
-                                                    <img src="https://www.w3schools.com/howto/img_avatar.png"
-                                                        alt="Avatar" style="width:20px; border-radius: 50%;">
+                                                    <img src="./Illustrations/avatar-4.png" alt="Avatar" style="width:20px; border-radius: 50%;">
+                                                    <img src="./Illustrations/avatar-6.png" alt="Avatar" style="width:20px; border-radius: 50%;">
                                                 </p>
                                                 <p><span style="font-size: 14px;"> and 2 others</span></p>
                                             </div>
@@ -410,19 +431,15 @@
                                 </div>
                                 <div class="col-md-3">
                                     <div class="card vid-card">
-                                        <a href="./video-call.html"><img class="card-img-top"
-                                                style="border-radius: 25px 25px 0px 0px;"
-                                                src="https://images.unsplash.com/photo-1520685303244-0461943ece6e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                                        <a href="./video-call.html"><img class="card-img-top" style="border-radius: 25px 25px 0px 0px;" src="https://images.unsplash.com/photo-1520685303244-0461943ece6e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
                                                 width="90%"></a>
                                         <div class="card-body">
                                             <div style="line-height: 25px;">
                                                 <p class="card-text"><span style="font-weight: 600; font-size: 22px;">
                                                         Camping Club</span></p>
                                                 <p style="float: left; padding-right: 10px;">
-                                                    <img src="https://www.w3schools.com/howto/img_avatar.png"
-                                                        alt="Avatar" style="width:20px; border-radius: 50%;">
-                                                    <img src="https://www.w3schools.com/howto/img_avatar.png"
-                                                        alt="Avatar" style="width:20px; border-radius: 50%;">
+                                                    <img src="./Illustrations/avatar-1.png" alt="Avatar" style="width:20px; border-radius: 50%;">
+                                                    <img src="./Illustrations/avatar-3.png" alt="Avatar" style="width:20px; border-radius: 50%;">
                                                 </p>
                                                 <p><span style="font-size: 14px;"> and 4 others</span></p>
                                             </div>
@@ -442,26 +459,19 @@
                                 <div class="col-md-4">
                                     <h4 class="" style="padding-top: 45px;">Hangout Reminders</h4>
                                     <br>
-                                    <div class="card vid-card"
-                                        style="border-radius: 25px; background-color: white; color: black;">
+                                    <div class="card vid-card" style="border-radius: 25px; background-color: white; color: black;">
                                         <div class="card-body">
                                             <div>
-                                                <p style="float: left; padding-right: 20px;"><img
-                                                        src="https://www.w3schools.com/howto/img_avatar.png"
-                                                        alt="Avatar" style="width:50px; border-radius: 50%;"></p>
-                                                <p class="card-text"><span
-                                                        style="font-weight: 500; font-size: 20px;">Lunch with
+                                                <p style="float: left; padding-right: 20px;"><img src="./Illustrations/avatar-4.png" alt="Avatar" style="width:50px; border-radius: 50%;"></p>
+                                                <p class="card-text"><span style="font-weight: 500; font-size: 20px;">Lunch with
                                                         Jennifer</span>
                                                     <br><span style="font-size: 14px;">11:30, 2021/07/14</span>
                                                 </p>
                                             </div>
                                             <br>
                                             <div>
-                                                <p style="float: left; padding-right: 20px;"><img
-                                                        src="https://www.w3schools.com/howto/img_avatar.png"
-                                                        alt="Avatar" style="width:50px; border-radius: 50%;"></p>
-                                                <p class="card-text"><span
-                                                        style="font-weight: 500; font-size: 20px;">Dinner with
+                                                <p style="float: left; padding-right: 20px;"><img src="./Illustrations/avatar-3.png" alt="Avatar" style="width:50px; border-radius: 50%;"></p>
+                                                <p class="card-text"><span style="font-weight: 500; font-size: 20px;">Dinner with
                                                         Isabella</span>
                                                     <br><span style="font-size: 14px;">18:30, 2021/07/16</span>
                                                 </p>
@@ -474,16 +484,12 @@
                                 </div>
                                 <div class="col-md-8">
                                     <h4 class="" style="padding-top: 45px;">Notifications</h4><br>
-                                    <div class="card vid-card"
-                                        style="border-radius: 25px; background-color: white; color: black;">
+                                    <div class="card vid-card" style="border-radius: 25px; background-color: white; color: black;">
                                         <div class="card-body">
                                             <div>
                                                 <a href="#">
-                                                    <p style="float: left; padding-right: 20px;"><img
-                                                            src="https://www.w3schools.com/howto/img_avatar.png"
-                                                            alt="Avatar" style="width:50px; border-radius: 50%;"></p>
-                                                    <p class="card-text"><span
-                                                            style="font-weight: 500; font-size: 20px;">Maeve invited you
+                                                    <p style="float: left; padding-right: 20px;"><img src="./Illustrations/avatar-5.png" alt="Avatar" style="width:50px; border-radius: 50%;"></p>
+                                                    <p class="card-text"><span style="font-weight: 500; font-size: 20px;">Maeve invited you
                                                             to
                                                             a video chatroom with 3 others</span>
                                                         <br><span style="font-size: 14px;">“You guys don’t know what
@@ -494,11 +500,8 @@
                                             <br>
                                             <div>
                                                 <a href="">
-                                                    <p style="float: left; padding-right: 20px;"><img
-                                                            src="https://www.w3schools.com/howto/img_avatar.png"
-                                                            alt="Avatar" style="width:50px; border-radius: 50%;"></p>
-                                                    <p class="card-text"><span
-                                                            style="font-weight: 500; font-size: 20px;">Regina mentioned
+                                                    <p style="float: left; padding-right: 20px;"><img src="./Illustrations/avatar-6.png" alt="Avatar" style="width:50px; border-radius: 50%;"></p>
+                                                    <p class="card-text"><span style="font-weight: 500; font-size: 20px;">Regina mentioned
                                                             you
                                                             in Class 2 mates chatroom</span>
                                                         <br><span style="font-size: 14px;">“What do you think about my
@@ -523,21 +526,17 @@
 
     <br>
     <script>
-        /* Set the width of the side navigation to 250px */
         function openNav() {
             document.getElementById("mySidenav").style.width = "450px";
-            document.getElementById("overlay").style.display = "block";
+            document.getElementById("calendar-icon").style.color = "#fccd04";
         }
 
-        /* Set the width of the side navigation to 0 */
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("overlay").style.display = "none";
+            document.getElementById("calendar-icon").style.color = "#9a77cf";
         }
-
     </script>
     <script>
-        // tooltip demo
         $('.tooltip-div').tooltip({
             selector: "[data-toggle=tooltip]",
             container: "body"

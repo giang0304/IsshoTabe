@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./home.css">
     <title>Log In</title>
@@ -40,22 +39,19 @@
                         <!-- Email Address -->
                         <p>Email</p>
                         <div class="input-group col-lg-12 mb-4">
-                            <input id="email" type="email" name="email" placeholder="Email Address"
-                                class="form-control bg-white border-left-0 border-md">
+                            <input id="email" type="email" name="email" placeholder="Email Address" class="form-control bg-white border-left-0 border-md">
                         </div>
 
                         <!-- Password -->
                         <p>Password</p>
                         <div class="input-group col-lg-6 mb-4">
-                            <input id="password" type="password" name="password" placeholder="Password"
-                                class="form-control bg-white border-left-0 border-md">
+                            <input id="password" type="password" name="password" placeholder="Password" class="form-control bg-white border-left-0 border-md">
                         </div>
 
-                        <div class="form-group col-lg-12 text-center">
-                            <button class="btn landing-btn btn-block"><a href="./home.html" style="color: white; text-decoration: none;">
-                                Log In
-                            </a> </button>
-                            
+                        <div class="form-group col-lg-12 mx-auto text-center">
+                            <a href="./home.html" style="color: white; text-decoration: none;" class="btn landing-btn btn-block py-2">
+                                <span>Log In</span></a>
+
                         </div>
 
                         <!-- Divider Text -->
@@ -84,8 +80,7 @@
                         <br><br><br>
                         <!-- Already Registered -->
                         <div class="text-center w-100 text-center">
-                            <p class="text-muted font-weight-bold">Don't have an account? <a href="register.html"
-                                    class="ml-2" style="color: black;">Register</a></p>
+                            <p class="text-muted font-weight-bold">Don't have an account? <a href="register.html" class="ml-2" style="color: black;">Register</a></p>
                         </div>
 
                     </div>
@@ -113,18 +108,16 @@
             document.getElementById("mySidenav").style.width = "0";
             document.getElementById("overlay").style.display = "none";
         }
-
     </script>
     <script>
-        $(function () {
-            $('input, select').on('focus', function () {
+        $(function() {
+            $('input, select').on('focus', function() {
                 $(this).parent().find('.input-group-text').css('border-color', '#80bdff');
             });
-            $('input, select').on('blur', function () {
+            $('input, select').on('blur', function() {
                 $(this).parent().find('.input-group-text').css('border-color', '#ced4da');
             });
         });
-
     </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>

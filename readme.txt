@@ -16,7 +16,7 @@ To return to this homepage, you can click on the Manabu logo on the header on mo
    + 1 subpage of the video chatroom
    + 1 page of prototyping the video call/meeting
 
-- Due to my lack of coding skills, I apologize that apart from buttons that transition between pages, most of the functions on the website do not work properly as they should (for example, logging in, creating an account, texting (in the chat feed),  or starting a video call). The website consists of visual design components only, and no back-end functions were programmed.
+- Due to my lack of coding skills, I apologize that apart from buttons that transition between pages, most of the functions on the website do not work properly as they should (for example, logging in, creating an account, texting (in the chat feed),  or starting a video call). The website consists of visual design components and the presentations of functions only, and no back-end functions were programmed.
 
 - Moreover, as the target users are laptop users, ideally in their laptop's full screen, most parts of this website are not responsive for mobile and tablet screens.
 
@@ -24,7 +24,5 @@ To return to this homepage, you can click on the Manabu logo on the header on mo
 Disclaimer:
 
 - The photos used on the website are from Unsplash - a platform that grants full permission of using their images.
-
-- The avatar picture for avatar placeholder is from w3schools.
 
 - The graphical illustrations on the website are my original ones.
